@@ -2,12 +2,15 @@ using System.Linq;
 using API.Data;
 using API.Errors;
 using API.Helpers;
-
+using API.Interfaces;
+using API.Services;
 using AutoMapper;
- using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using API.Data.Repositories;
+
 
 namespace API.Extensions
 {
@@ -16,7 +19,10 @@ namespace API.Extensions
         public static IServiceCollection AddApplicationServices(this IServiceCollection services, IConfiguration config)
         {
 
-           
+            services.AddScoped<ITokenService, TokenService>();
+
+ 
+            services.AddScoped<IAccountRepository, AccountRepository>();
 
             services.AddAutoMapper(typeof(AutoMapperProfiles).Assembly);
 
