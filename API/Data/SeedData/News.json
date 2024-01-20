@@ -1,0 +1,98 @@
+[{
+        "Title": "Angular Speedster Board 2000",
+        "Summary": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
+        "Content": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
+        "CreatedUserId": 1,
+        "CreatedAt": "2024-01-24",
+        "PublishedAt": "2024-01-25",
+        "UpdatedUserId": 2,
+        "UpdatedAt": "2024-01-26",
+        "Published": true,
+        "NewsImages": [{
+            "Folder": "/images/0/",
+            "IsMain": true
+        }],
+        "CategoryId": 3,
+        "isShowInMain": true,
+        "isChooseEditor": true,
+        "IsBreakingOrImportant": false
+    },
+    {
+        "Title": "Green Angular Board 3000",
+        "Summary": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
+        "Content": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
+        "CreatedUserId": 2,
+        "CreatedAt": "2024-01-24",
+        "PublishedAt": "2024-01-25",
+        "UpdatedUserId": 3,
+        "UpdatedAt": "2024-01-26",
+        "Published": true,
+        "NewsImages": [{
+            "Folder": "/images/1/",
+            "IsMain": true
+        }],
+        "CategoryId": 1,
+        "isShowInMain": true,
+        "isChooseEditor": true,
+        "IsBreakingOrImportant": false
+    },
+    {
+        "Title": "Core Board Speed Rush 3",
+        "Summary": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
+        "Content": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
+        "CreatedUserId": 3,
+        "CreatedAt": "2024-01-24",
+        "PublishedAt": "2024-01-25",
+        "UpdatedUserId": 3,
+        "UpdatedAt": "2024-01-26",
+        "Published": true,
+        "NewsImages": [{
+            "Folder": "/images/3/",
+            "IsMain": true
+        }],
+        "CategoryId": 2,
+        "isShowInMain": true,
+        "isChooseEditor": true,
+        "IsBreakingOrImportant": true
+    },
+    {
+        "Title": "Net Core Super Board",
+        "Summary": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
+        "Content": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
+        "CreatedUserId": 5,
+        "CreatedAt": "2024-01-24",
+        "PublishedAt": "2024-01-25",
+        "UpdatedUserId": 2,
+        "UpdatedAt": "2024-01-26",
+        "Published": true,
+        "NewsImages": [{
+            "Folder": "/images/4/",
+            "IsMain": true
+        }],
+        "CategoryId": 4,
+        "isShowInMain": true,
+        "isChooseEditor": true,
+        "IsBreakingOrImportant": false
+    },
+    {
+        "Title": "React Board Super Whizzy Fast",
+        "Summary": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
+        "Content": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
+        "CreatedUserId": 3,
+        "CreatedAt": "2024-01-24",
+        "PublishedAt": "2024-01-25",
+        "UpdatedUserId": 3,
+        "UpdatedAt": "2024-01-26",
+        "Published": false,
+        "NewsImages": [{
+            "Folder": "/images/0/",
+            "IsMain": true
+        }],
+        "CategoryId": 4,
+        "isShowInMain": true,
+        "isChooseEditor": true,
+        "IsBreakingOrImportant": true
+    }
+
+
+]

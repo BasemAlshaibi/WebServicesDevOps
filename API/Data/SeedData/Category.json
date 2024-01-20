@@ -1,0 +1,32 @@
+[{
+        "Name": "Politics",
+        "Status": true,
+        "Order": 5
+    },
+    {
+        "Name": "Business",
+        "Status": true,
+        "Order": 15
+
+    },
+    {
+        "Name": "Entertainment",
+        "Status": true,
+        "Order": 20
+    },
+    {
+        "Name": "Health",
+        "Status": false,
+        "Order": 23
+    },
+    {
+        "Name": "Sport",
+        "Status": true,
+        "Order": 40
+    },
+    {
+        "Name": "Travel",
+        "Status": true,
+        "Order": 45
+    }
+]
