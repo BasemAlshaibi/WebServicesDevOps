@@ -25,14 +25,14 @@ namespace API.Controllers
 
         }
 
-        [Authorize]
+     //   [Authorize]
         [HttpPost("register")]
         public async Task<ActionResult<AuthResponseDto>> Register(RegisterDto registerDto)
         {
             // نبعث الاسم لدالة اخرى ننشىها بالاسفل لنتاكل ان اسم المستخدم ليس موجود
             if (await _accountRepository.CheckEmailExistsAsync(registerDto.Email)) return BadRequest( new ApiResponse(400, "this email is taken"));
 
-              var result = await _accountRepository.RegisterAsync(registerDto);   
+            var result = await _accountRepository.RegisterAsync(registerDto);   
 
             if (result.Message is not null) return BadRequest(new ApiResponse(400,result.Message)  );
 
@@ -41,7 +41,7 @@ namespace API.Controllers
  
         }
 
-        [HttpPost("login1")] // مؤقت الواحد
+        [HttpPost("login")] // مؤقت الواحد
         public async Task<ActionResult<AuthResponseDto>> Login(LoginDto loginDto)
         {
             var result = await _accountRepository.LoginAsync(loginDto); 

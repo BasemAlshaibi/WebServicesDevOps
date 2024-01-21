@@ -33,8 +33,15 @@ namespace API.Extensions
                 cfg.AddProfile(new AutoMapperProfiles(provider.GetService<IConfiguration>()));
             }).CreateMapper());
 
+            services.Configure<CloudinarySettings>(config.GetSection("CloudinarySettings"));
 
-            services.AddDbContext<DataContext>(options =>
+            // حزمة الكلاودينيري
+            services.AddScoped<IPhotoCloudinaryService, IPhotoCloudinaryService>();
+   
+            services.AddTransient<IImageUploaderService, ImageUploaderService>();
+
+
+          services.AddDbContext<DataContext>(options =>
           {
               options.UseSqlServer(config.GetConnectionString("DefaultConnection"));
           });

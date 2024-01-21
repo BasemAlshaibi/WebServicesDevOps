@@ -59,7 +59,7 @@ namespace API.Data
                 UserName = "admin"
             };
 
-            // نريد كمان يعمل لنا زرع بانشاء مستخدم خصوصي باسم ادمن يكون له رولز ادمن ومشرف مع بعض
+            // نريد كمان يعمل لنا زرع بانشاء مستخدم خصوصي باسم ادمن يكون له رولز ادمن 
             await userManager.CreateAsync(admin, "Pa$$w0rd");
             await userManager.AddToRolesAsync(admin, new[] { "Admin"});
         }
