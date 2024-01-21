@@ -18,6 +18,7 @@ using API.Extensions;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using API.Interfaces;
 using API.Services;
+using API.Middleware;
 
 
 namespace API
@@ -35,7 +36,7 @@ namespace API
         
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddScoped<ITokenService, TokenService>();
+        //    services.AddScoped<ITokenService, TokenService>();
 
 
             services.AddControllers();
@@ -62,7 +63,7 @@ namespace API
                  app.UseExceptionHandler("/Home/Error"); // مؤقت
                  }
 
-        //    app.UseMiddleware<ExceptionMiddleware>();
+           app.UseMiddleware<ExceptionMiddleware>();
 
             /*
             السطر التالي هو في حالة انه حاول يوصل عبر اي ايند بوينت غير صحيحة مثل
@@ -97,7 +98,7 @@ namespace API
              app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
-             //   endpoints.MapFallbackToController("Index", "Fallback");
+          //  endpoints.MapFallbackToController("Index", "Fallback");
             });
         }
     }

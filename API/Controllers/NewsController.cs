@@ -101,7 +101,7 @@ NotFound
         }
 
 
-     //   [ServiceFilter(typeof(NoOfReadIncrement))]
+      [ServiceFilter(typeof(NoOfReadIncrement))]
         [HttpGet]
        // [Authorize]
         [Route("{Id}")]
@@ -113,7 +113,7 @@ NotFound
             return Ok(news);
         }
  
-      //  [ServiceFilter(typeof(NoOfReadIncrement))]
+      [ServiceFilter(typeof(NoOfReadIncrement))]
         [HttpGet]
         [Route("GetNewsDetailsForVisitorsById/{Id}")]
         public async Task<ActionResult<NewsRespDetailsVistorsDto>> GetNewsDetailsForVisitorsById(int Id)

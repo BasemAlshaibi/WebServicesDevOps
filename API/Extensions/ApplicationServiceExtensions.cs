@@ -20,6 +20,10 @@ namespace API.Extensions
         {
 
             services.AddScoped<ITokenService, TokenService>();
+            
+            services.AddScoped<LogUserActivity>();
+
+            services.AddScoped<NoOfReadIncrement>();
 
            services.AddScoped<IUnitOfWork, UnitOfWork>(); 
             services.AddScoped<IAccountRepository, AccountRepository>();
