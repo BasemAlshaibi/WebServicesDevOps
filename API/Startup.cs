@@ -16,6 +16,8 @@ using Microsoft.OpenApi.Models;
 using API.Data;
 using API.Extensions;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using API.Interfaces;
+using API.Services;
 
 
 namespace API
@@ -33,7 +35,7 @@ namespace API
         
         public void ConfigureServices(IServiceCollection services)
         {
-           //  services.AddScoped<ITokenService, TokenService>();
+            services.AddScoped<ITokenService, TokenService>();
 
 
             services.AddControllers();
@@ -87,6 +89,8 @@ namespace API
 // must be after UseRouting and before UseEndpoints
 
             app.UseCors(x => x.AllowAnyHeader().AllowAnyMethod().AllowCredentials().AllowAnyOrigin().WithOrigins("https://localhost:4200"));
+
+            app.UseAuthentication();
 
             app.UseAuthorization();
 

@@ -25,7 +25,7 @@ namespace API.DTOs
 
        
         // هنا خلينا الكولكشن من نوع الفوتو دتو وبالتالي لا وجود لتداخل خصائص النفجيشن بين الكيانين 
-        public ICollection<UserPhotoDto> Photos { get; set; }
+        public ICollection<UserPhotoDto> UserPhotos { get; set; }
 
  
          public string Role { get; set; }

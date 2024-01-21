@@ -21,7 +21,7 @@ namespace API.Extensions
 
             services.AddScoped<ITokenService, TokenService>();
 
- 
+           services.AddScoped<IUnitOfWork, UnitOfWork>(); 
             services.AddScoped<IAccountRepository, AccountRepository>();
 
             services.AddAutoMapper(typeof(AutoMapperProfiles).Assembly);
@@ -33,10 +33,15 @@ namespace API.Extensions
                 cfg.AddProfile(new AutoMapperProfiles(provider.GetService<IConfiguration>()));
             }).CreateMapper());
 
-            services.Configure<CloudinarySettings>(config.GetSection("CloudinarySettings"));
+            
 
             // حزمة الكلاودينيري
-            services.AddScoped<IPhotoCloudinaryService, IPhotoCloudinaryService>();
+            services.AddScoped<IPhotoCloudinaryService, PhotoCloudinaryService>();
+
+            services.Configure<CloudinarySettings>(config.GetSection("CloudinarySettings"));
+
+
+
    
             services.AddTransient<IImageUploaderService, ImageUploaderService>();
 
